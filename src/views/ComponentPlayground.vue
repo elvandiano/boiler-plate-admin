@@ -1,12 +1,10 @@
 <template>
-  <div>
-    <h1>container</h1>
-  </div>
+  <div></div>
 </template>
 
 <script>
 export default {
-  name: 'DefaultContainer'
+  name: 'ComponentPlayground'
 }
 </script>
 
