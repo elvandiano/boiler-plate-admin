@@ -1,35 +1,50 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
-import Home from '../views/Home.vue'
+
+import page404 from '../components/Page404'
+import Dashboard from '../views/Dashboard'
+import Profile from '../views/Profile'
+import DefaultContainer from '../containers/DefaultContainer'
 import ComponentPlayground from '../views/ComponentPlayground'
 
 Vue.use(VueRouter)
 
-const routes = [
-  {
-    path: '/',
-    name: 'home',
-    component: Home
-  },
-  {
-    path: '/about',
-    name: 'about',
-    // route level code-splitting
-    // this generates a separate chunk (about.[hash].js) for this route
-    // which is lazy-loaded when the route is visited.
-    component: () => import(/* webpackChunkName: "about" */ '../views/About.vue')
-  },
-  {
-    path: '/playground',
-    name: 'Component Playground',
-    component: ComponentPlayground
-  }
-]
-
 const router = new VueRouter({
   mode: 'history',
-  base: process.env.BASE_URL,
-  routes
+  linkActiveClass: 'open active',
+  scrollBehavior: () => ({ y: 0 }),
+  routes: [
+    {
+      path: '/',
+      redirect: 'dashboard',
+      component: DefaultContainer,
+      children: [
+        {
+          path: 'dashboard',
+          name: 'Dashboard',
+          component: Dashboard
+        },
+        {
+          path: 'profile',
+          name: 'Profile',
+          component: Profile
+        },
+        {
+          path: 'playground',
+          name: 'Component Playground',
+          component: ComponentPlayground
+        }
+      ]
+    },
+    {
+      path: '*',
+      name: 'Page 404',
+      component: page404
+    }
+  ]
 })
+
+// router.beforeEach((to, from, next) => {
+// })
 
 export default router
