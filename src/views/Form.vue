@@ -108,6 +108,12 @@ export default {
       ],
       show: true
     }
+  },
+  created: function () {
+    const loader = this.$loading.show()
+    setTimeout(() => {
+      loader.hide()
+    }, 3000)
   }
 }
 </script>
