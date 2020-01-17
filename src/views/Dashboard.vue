@@ -1,13 +1,17 @@
 <template>
   <div class="row">
       <div class="col-6">
-        <b-card>
+        <b-card header="Bar Chart">
+          <div class="chart-wrapper">
           <bar></bar>
+          </div>
         </b-card>
       </div>
       <div class="col-6">
-        <b-card>
-          <pie></pie>
+        <b-card header="Pie Chart">
+          <div class="chart-wrapper">
+            <pie></pie>
+          </div>
         </b-card>
       </div>
   </div>

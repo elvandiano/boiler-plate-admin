@@ -1,11 +1,14 @@
 <template>
-  <div class="container-fluid">
-    <b-link href="https://sweetalert.js.org/guides/"><h5>Doc Sweetalert</h5></b-link><br/>
-    <b-button style="width: 200px" @click='warningAlert' variant="warning" size="sm">Alert Warning</b-button><br/><br/>
-    <b-button style="width: 200px" @click='errorAlert' variant="danger" size="sm">Alert Error</b-button><br/><br/>
-    <b-button style="width: 200px" @click='infoAlert' variant="info" size="sm">Alert Info</b-button><br/><br/>
-    <b-button style="width: 200px" @click='successAlert' variant="success" size="sm">Alert Success</b-button>
-  </div>
+    <b-card header="Alert">
+      <div class="chart-wrapper">
+        <b-link href="https://sweetalert.js.org/guides/"><h5>Doc Sweetalert</h5></b-link>
+        <hr/>
+        <b-button style="width: 200px; margin-right: 5px" @click='warningAlert' variant="warning" size="sm">Launching Alert Warning</b-button>
+        <b-button style="width: 200px; margin-right: 5px" @click='errorAlert' variant="danger" size="sm">Launching Alert Error</b-button>
+        <b-button style="width: 200px; margin-right: 5px" @click='infoAlert' variant="info" size="sm">Launching Alert Info</b-button>
+        <b-button style="width: 200px" @click='successAlert' variant="success" size="sm">Launching Alert Success</b-button>
+      </div>
+    </b-card>
 </template>
 
 <script>
