@@ -4,6 +4,7 @@ import VueRouter from 'vue-router'
 import Profile from '../views/Profile'
 import Dashboard from '../views/Dashboard'
 import page404 from '../components/Page404'
+import Alert from '../components/Alert'
 import Login from '../components/auth/Login'
 import Register from '../components/auth/Register'
 import DefaultContainer from '../containers/DefaultContainer'
@@ -31,6 +32,11 @@ const router = new VueRouter({
           path: 'profile',
           name: 'Profile',
           component: Profile
+        },
+        {
+          path: 'alert',
+          name: 'Alert',
+          component: Alert
         },
         {
           path: 'playground',
