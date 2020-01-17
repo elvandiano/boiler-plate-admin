@@ -19,11 +19,27 @@
                                   v-model="username"
                                   autocomplete="username email"/>
                   </b-input-group>
+                  <b-input-group class="mb-3">
+                    <b-input-group-prepend>
+                      <b-input-group-text><i class="fa fa-user"></i></b-input-group-text>
+                    </b-input-group-prepend>
+                    <b-form-input type="text" class="form-control" placeholder="Email"
+                                  v-model="username"
+                                  autocomplete="username email"/>
+                  </b-input-group>
                   <b-input-group class="mb-4">
                     <b-input-group-prepend>
                       <b-input-group-text><i class="fa fa-lock"></i></b-input-group-text>
                     </b-input-group-prepend>
                     <b-form-input type="password" class="form-control" placeholder="Password"
+                                  v-model="password"
+                                  autocomplete="current-password"/>
+                  </b-input-group>
+                  <b-input-group class="mb-4">
+                    <b-input-group-prepend>
+                      <b-input-group-text><i class="fa fa-lock"></i></b-input-group-text>
+                    </b-input-group-prepend>
+                    <b-form-input type="password" class="form-control" placeholder="Re-Password"
                                   v-model="password"
                                   autocomplete="current-password"/>
                   </b-input-group>

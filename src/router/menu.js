@@ -26,6 +26,11 @@ export default {
       icon: 'fa fa-bell'
     },
     {
+      name: 'Table',
+      url: '/table',
+      icon: 'fa fa-table'
+    },
+    {
       divider: true
     }
   ]
