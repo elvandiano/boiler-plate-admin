@@ -12,6 +12,7 @@ import ComponentPlayground from '../views/ComponentPlayground'
 import Buttons from '../views/Buttons'
 import Form from '../views/Form'
 import Table from '../views/Table'
+import Tabs from '../views/Tabs'
 
 Vue.use(VueRouter)
 
@@ -58,6 +59,11 @@ const router = new VueRouter({
           path: 'form',
           name: 'Form',
           component: Form
+        },
+        {
+          path: 'tabs',
+          name: 'Tabs',
+          component: Tabs
         }
       ]
     },

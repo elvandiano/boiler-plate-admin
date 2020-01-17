@@ -3,27 +3,43 @@ export default {
     {
       name: 'Chart',
       url: '/chart',
-      icon: 'fa fa-dashboard'
-    },
-    // {
-    //   name: 'Profile',
-    //   url: '/profile',
-    //   icon: 'fa fa-user'
-    // },
-    {
-      name: 'Buttons',
-      url: '/buttons',
-      icon: 'fa fa-cube'
+      icon: 'fa fa-pie-chart'
     },
     {
-      name: 'Form',
-      url: '/form',
-      icon: 'fa fa-clipboard'
+      title: true,
+      name: 'Components',
+      class: '',
+      wrapper: {
+        element: '',
+        attributes: {}
+      }
     },
     {
-      name: 'Alert',
-      url: '/alert',
-      icon: 'fa fa-bell'
+      name: 'Base',
+      url: '/base',
+      icon: 'fa fa-bars',
+      children: [
+        {
+          name: 'Buttons',
+          url: '/buttons',
+          icon: 'fa fa-cube'
+        },
+        {
+          name: 'Form',
+          url: '/form',
+          icon: 'fa fa-clipboard'
+        },
+        {
+          name: 'Alert',
+          url: '/alert',
+          icon: 'fa fa-bell'
+        },
+        {
+          name: 'Tabs',
+          url: '/tabs',
+          icon: 'fa fa-book'
+        }
+      ]
     },
     {
       name: 'Table',

@@ -1,16 +1,16 @@
 <template>
-  <div class="container-fluid">
-    <div class="card" style="padding: 20px 20px 20px 20px">
-      <table-plate sticky-header="false" :columns="tableColumn" :item="listItem" :useNumber="false"
-                    @pagination="getDataTable">
-        <template slot="action" slot-scope="data">
-          <b-button style="margin: 0 3px 0 3px" size="sm" variant="info" @click="editTable(data.item)"><i class="fa fa-pencil"></i></b-button>
-          <b-button style="margin: 0 3px 0 3px" size="sm" variant="success" @click="detailTable(data.item)"><i class="fa fa-table"></i></b-button>
-          <b-button style="margin: 0 3px 0 3px" size="sm" variant="danger" @click="deleteTable"><i class="fa fa-trash"></i></b-button>
-        </template>
-      </table-plate>
-    </div>
-  </div>
+    <b-card header="Table">
+      <div class="chart-wrapper">
+        <table-plate sticky-header="false" :columns="tableColumn" :item="listItem" :useNumber="false"
+                     @pagination="getDataTable">
+          <template slot="action" slot-scope="data">
+            <b-button style="margin: 0 3px 0 3px" size="sm" variant="info" @click="editTable(data.item)"><i class="fa fa-pencil"></i></b-button>
+            <b-button style="margin: 0 3px 0 3px" size="sm" variant="success" @click="detailTable(data.item)"><i class="fa fa-table"></i></b-button>
+            <b-button style="margin: 0 3px 0 3px" size="sm" variant="danger" @click="deleteTable"><i class="fa fa-trash"></i></b-button>
+          </template>
+        </table-plate>
+      </div>
+    </b-card>
 </template>
 
 <script>
