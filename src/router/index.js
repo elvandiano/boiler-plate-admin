@@ -11,6 +11,7 @@ import DefaultContainer from '../containers/DefaultContainer'
 import ComponentPlayground from '../views/ComponentPlayground'
 import Buttons from '../views/Buttons'
 import Form from '../views/Form'
+import Table from '../views/Table'
 
 Vue.use(VueRouter)
 
@@ -47,6 +48,11 @@ const router = new VueRouter({
           path: 'buttons',
           name: 'Buttons',
           component: Buttons
+        },
+        {
+          path: 'table',
+          name: 'Table',
+          component: Table
         },
         {
           path: 'form',
