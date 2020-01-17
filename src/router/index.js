@@ -1,9 +1,11 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
 
-import page404 from '../components/Page404'
-import Dashboard from '../views/Dashboard'
 import Profile from '../views/Profile'
+import Dashboard from '../views/Dashboard'
+import page404 from '../components/Page404'
+import Login from '../components/auth/Login'
+import Register from '../components/auth/Register'
 import DefaultContainer from '../containers/DefaultContainer'
 import ComponentPlayground from '../views/ComponentPlayground'
 
@@ -12,7 +14,6 @@ Vue.use(VueRouter)
 const router = new VueRouter({
   mode: 'history',
   linkActiveClass: 'open active',
-  scrollBehavior: () => ({ y: 0 }),
   routes: [
     {
       path: '/',
@@ -35,6 +36,16 @@ const router = new VueRouter({
           component: ComponentPlayground
         }
       ]
+    },
+    {
+      path: '/login',
+      name: 'Login',
+      component: Login
+    },
+    {
+      path: '/register',
+      name: 'Register',
+      component: Register
     },
     {
       path: '*',

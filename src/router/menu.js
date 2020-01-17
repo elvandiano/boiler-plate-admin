@@ -3,12 +3,12 @@ export default {
     {
       name: 'Dashboard',
       url: '/dashboard',
-      icon: 'cui-home'
+      icon: 'fa fa-dashboard'
     },
     {
       name: 'Profile',
       url: '/profile',
-      icon: 'cui-home'
+      icon: 'fa fa-user'
     },
     {
       divider: true
