@@ -2,14 +2,14 @@ export default {
   items: [
     {
       name: 'Chart',
-      url: '/dashboard',
+      url: '/chart',
       icon: 'fa fa-dashboard'
     },
-    {
-      name: 'Profile',
-      url: '/profile',
-      icon: 'fa fa-user'
-    },
+    // {
+    //   name: 'Profile',
+    //   url: '/profile',
+    //   icon: 'fa fa-user'
+    // },
     {
       name: 'Buttons',
       url: '/buttons',

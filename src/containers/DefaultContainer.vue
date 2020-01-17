@@ -2,9 +2,9 @@
   <div class="app">
     <AppHeader fixed>
       <SidebarToggler class="d-lg-none" display="md" mobile/>
-      <b-link class="navbar-brand" to="/dashboard">
-        <img class="navbar-brand-full" src="../assets/img/dn.png" width="110" height="40" alt="AirSale Logo">
-        <img class="navbar-brand-minimized" src="../assets/img/logoDn.png" height="50" alt="AirSale Logo">
+      <b-link class="navbar-brand" to="/chart">
+        <img class="navbar-brand-full" src="../assets/img/logoIcon.png" width="110" height="30" alt="AirSale Logo">
+        <img class="navbar-brand-minimized" src="../assets/img/logo.png" style="margin: 10px 10px 10px 10px" height="40" width="50" alt="AirSale Logo">
       </b-link>
       <SidebarToggler class="d-md-down-none" display="lg"/>
       <b-navbar-nav class="d-md-down-none">
