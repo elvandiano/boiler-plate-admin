@@ -4,10 +4,13 @@ import VueRouter from 'vue-router'
 import Profile from '../views/Profile'
 import Dashboard from '../views/Dashboard'
 import page404 from '../components/Page404'
+import Alert from '../components/Alert'
 import Login from '../components/auth/Login'
 import Register from '../components/auth/Register'
 import DefaultContainer from '../containers/DefaultContainer'
 import ComponentPlayground from '../views/ComponentPlayground'
+import Buttons from '../views/Buttons'
+import Form from '../views/Form'
 
 Vue.use(VueRouter)
 
@@ -31,9 +34,24 @@ const router = new VueRouter({
           component: Profile
         },
         {
+          path: 'alert',
+          name: 'Alert',
+          component: Alert
+        },
+        {
           path: 'playground',
           name: 'Component Playground',
           component: ComponentPlayground
+        },
+        {
+          path: 'buttons',
+          name: 'Buttons',
+          component: Buttons
+        },
+        {
+          path: 'form',
+          name: 'Form',
+          component: Form
         }
       ]
     },
