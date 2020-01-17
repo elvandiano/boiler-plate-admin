@@ -12,11 +12,18 @@ export default {
     },
     {
       name: 'Buttons',
-      url: '/buttons'
+      url: '/buttons',
+      icon: 'fa fa-cube'
     },
     {
       name: 'Form',
-      url: '/form'
+      url: '/form',
+      icon: 'fa fa-clipboard'
+    },
+    {
+      name: 'Alert',
+      url: '/alert',
+      icon: 'fa fa-bell'
     },
     {
       divider: true
