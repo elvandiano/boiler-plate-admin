@@ -7,8 +7,8 @@
             <b-card no-body class="p-4" id="dataInput">
               <b-card-body>
                 <b-form>
-                  <div align="center" style="margin-bottom: 20px;">
-                    <img src="../../assets/img/dn.png" height="102" width="265"/>
+                  <div align="center" style="margin-bottom: 50px">
+                    <img src="../../assets/img/logoIcon.png" height="82" width="265"/>
                   </div>
                   <a style="color: whitesmoke" >Sudah memiliki akun? <i style="color: #051d1a"><router-link to="/login">Login</router-link></i></a>
                   <b-input-group class="mb-3">
@@ -89,7 +89,7 @@ export default {
 
 <style scoped>
   #bgrn {
-    background-color: antiquewhite;
+    background-color: #eaeaea;
   }
   #dataInput {
     background: rgba(1,8.1,9.7,0.3);
