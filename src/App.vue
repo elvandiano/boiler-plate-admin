@@ -12,7 +12,14 @@
 @import '~bootstrap/scss/bootstrap';
 @import '~bootstrap-vue/src/index.scss';
 
+// Import Bootstrap Vue Styles
+@import '~bootstrap-vue/dist/bootstrap-vue.css';
+
 // Import CoreUI
 @import "~@coreui/coreui/scss/coreui";
-@import '~@coreui/icons/css/coreui-icons.min.css';
+
+// Import Font Awesome Icons Set
+$fa-font-path: '~font-awesome/fonts/';
+@import '~font-awesome/scss/font-awesome.scss';
+
 </style>
