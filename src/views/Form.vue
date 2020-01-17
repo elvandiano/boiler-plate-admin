@@ -1,7 +1,7 @@
 <template>
   <div class="row">
     <div class="col-6">
-      <b-card title="Horizontal">
+      <b-card title="Vertical">
         <b-form>
           <b-form-group
             id="input-group-1"
@@ -45,7 +45,7 @@
       </b-card>
     </div>
     <div class="col-6">
-      <b-card title="Vertical">
+      <b-card title="Horizontal">
         <b-form>
           <b-form-group
             label-cols="3"

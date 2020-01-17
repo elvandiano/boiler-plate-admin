@@ -25,7 +25,7 @@ const router = new VueRouter({
       children: [
         {
           path: 'dashboard',
-          name: 'Dashboard',
+          name: 'Chart',
           component: Dashboard
         },
         {
