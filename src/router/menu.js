@@ -11,6 +11,14 @@ export default {
       icon: 'fa fa-user'
     },
     {
+      name: 'Buttons',
+      url: '/buttons'
+    },
+    {
+      name: 'Form',
+      url: '/form'
+    },
+    {
       divider: true
     }
   ]
