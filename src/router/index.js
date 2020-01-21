@@ -9,7 +9,9 @@ import Login from '../components/auth/Login'
 import Register from '../components/auth/Register'
 import DefaultContainer from '../containers/DefaultContainer'
 import ComponentPlayground from '../views/ComponentPlayground'
-import Buttons from '../views/Buttons'
+import Buttons from '../views/buttons/Buttons'
+import ButtonsGroup from '../views/buttons/ButtonGroups'
+import Dropdown from '../views/buttons/Dropdown'
 import Form from '../views/Form'
 import Table from '../views/Table'
 import Tabs from '../views/Tabs'
@@ -22,7 +24,7 @@ const router = new VueRouter({
   routes: [
     {
       path: '/',
-      redirect: 'dashboard',
+      redirect: 'chart',
       component: DefaultContainer,
       children: [
         {
@@ -49,6 +51,16 @@ const router = new VueRouter({
           path: 'buttons',
           name: 'Buttons',
           component: Buttons
+        },
+        {
+          path: 'buttons-group',
+          name: 'Button Group',
+          component: ButtonsGroup
+        },
+        {
+          path: 'buttons-dropdown',
+          name: 'Dropdown',
+          component: Dropdown
         },
         {
           path: 'table',

@@ -20,11 +20,6 @@ export default {
       icon: 'fa fa-bars',
       children: [
         {
-          name: 'Buttons',
-          url: '/buttons',
-          icon: 'fa fa-cube'
-        },
-        {
           name: 'Form',
           url: '/form',
           icon: 'fa fa-clipboard'
@@ -38,6 +33,28 @@ export default {
           name: 'Tabs',
           url: '/tabs',
           icon: 'fa fa-book'
+        }
+      ]
+    },
+    {
+      name: 'Buttons',
+      url: '/buttons',
+      icon: 'fa fa-cube',
+      children: [
+        {
+          name: 'Standard Buttons',
+          url: '/buttons',
+          icon: 'fa fa-cube'
+        },
+        {
+          name: 'Buttons Dropdown',
+          url: '/buttons-dropdown',
+          icon: 'fa fa-cube'
+        },
+        {
+          name: 'Buttons Group',
+          url: '/buttons-group',
+          icon: 'fa fa-cube'
         }
       ]
     },
