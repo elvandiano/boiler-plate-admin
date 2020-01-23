@@ -1,7 +1,7 @@
 <template>
     <b-card header="Alert">
       <div class="chart-wrapper">
-        <b-link href="https://sweetalert.js.org/guides/"><h5>Doc Sweetalert</h5></b-link>
+        <b-button class="m-2" size="xl" variant="info" href="https://sweetalert.js.org/guides/">>> Go to Sweetalert</b-button>
         <hr/>
         <b-button style="width: 200px; margin-right: 5px" @click='warningAlert' variant="warning" size="sm">Launching Alert Warning</b-button>
         <b-button style="width: 200px; margin-right: 5px" @click='errorAlert' variant="danger" size="sm">Launching Alert Error</b-button>

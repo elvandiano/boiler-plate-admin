@@ -98,26 +98,6 @@
             header-tag="header"
             footer-tag="footer">
             <div slot="header">
-              <i class="fa fa-align-justify"></i><strong> Dropdown </strong><small>hidden caret</small>
-            </div>
-            <div>
-              <b-dropdown variant="link" size="lg" no-caret>
-                <template slot="button-content">
-                  &#x1f50d;<span class="sr-only">Search</span>
-                </template>
-
-                <b-dropdown-item href="#">Action</b-dropdown-item>
-                <b-dropdown-item href="#">Another action</b-dropdown-item>
-                <b-dropdown-item href="#">Something else here...</b-dropdown-item>
-              </b-dropdown>
-            </div>
-          </b-card>
-        </b-col>
-        <b-col cols="12" md="6">
-          <b-card
-            header-tag="header"
-            footer-tag="footer">
-            <div slot="header">
               <i class="fa fa-align-justify"></i><strong> Dropdown </strong><small>sizing</small>
             </div>
             <div>
@@ -143,87 +123,6 @@
                 <b-dropdown-item-button>Something else here...</b-dropdown-item-button>
               </b-dropdown>
             </div>
-          </b-card>
-        </b-col>
-      </b-row>
-      <b-row>
-        <b-col cols="12" md="6">
-          <b-card
-            header-tag="header"
-            footer-tag="footer">
-            <div slot="header">
-              <i class="fa fa-align-justify"></i><strong> Dropdown </strong><small>headers and accessibility</small>
-            </div>
-            <div>
-              <b-dropdown id="ddown-aria" text="Dropdown ARIA" variant="primary" class="m-2">
-                <div role="group" aria-lableledby="header1">
-                  <b-dropdown-header id="header1">Groups</b-dropdown-header>
-                  <b-dropdown-item-button aria-describedby="header1">Add</b-dropdown-item-button>
-                  <b-dropdown-item-button aria-describedby="header1">Delete</b-dropdown-item-button>
-                </div>
-                <div role="group" aria-lableledby="header2">
-                  <b-dropdown-header id="header2">Users</b-dropdown-header>
-                  <b-dropdown-item-button aria-describedby="header2">Add</b-dropdown-item-button>
-                  <b-dropdown-item-button aria-describedby="header2">Delete</b-dropdown-item-button>
-                </div>
-                <b-dropdown-divider></b-dropdown-divider>
-                <b-dropdown-item-button>Something <strong>not</strong> associated with user</b-dropdown-item-button>
-              </b-dropdown>
-            </div>
-          </b-card>
-        </b-col>
-        <b-col cols="12" md="6">
-          <b-card
-            header-tag="header"
-            footer-tag="footer">
-            <div slot="header">
-              <i class="fa fa-align-justify"></i><strong> Dropdown </strong><small><code>variant</code></small>
-            </div>
-            <b-dropdown size="sm" id="ddown_primary" text="Primary" variant="primary" class="m-0">
-              <b-dropdown-item>First Action</b-dropdown-item>
-              <b-dropdown-item>Second Action</b-dropdown-item>
-              <b-dropdown-item>Third Action</b-dropdown-item>
-            </b-dropdown>
-            <b-dropdown size="sm" id="ddown_secondary" text="Secondary" variant="secondary" class="m-0">
-              <b-dropdown-item>First Action</b-dropdown-item>
-              <b-dropdown-item>Second Action</b-dropdown-item>
-              <b-dropdown-item>Third Action</b-dropdown-item>
-            </b-dropdown>
-            <b-dropdown size="sm" id="ddown_success" text="Success" variant="success" class="m-0">
-              <b-dropdown-item>First Action</b-dropdown-item>
-              <b-dropdown-item>Second Action</b-dropdown-item>
-              <b-dropdown-item>Third Action</b-dropdown-item>
-            </b-dropdown>
-            <b-dropdown size="sm" id="ddown_warning" text="Warning" variant="warning" class="m-0">
-              <b-dropdown-item>First Action</b-dropdown-item>
-              <b-dropdown-item>Second Action</b-dropdown-item>
-              <b-dropdown-item>Third Action</b-dropdown-item>
-            </b-dropdown>
-            <b-dropdown size="sm" id="ddown_danger" text="Danger" variant="danger" class="m-0">
-              <b-dropdown-item>First Action</b-dropdown-item>
-              <b-dropdown-item>Second Action</b-dropdown-item>
-              <b-dropdown-item>Third Action</b-dropdown-item>
-            </b-dropdown>
-            <b-dropdown size="sm" id="ddown_info" text="Info" variant="info" class="m-0">
-              <b-dropdown-item>First Action</b-dropdown-item>
-              <b-dropdown-item>Second Action</b-dropdown-item>
-              <b-dropdown-item>Third Action</b-dropdown-item>
-            </b-dropdown>
-            <b-dropdown size="sm" id="ddown_light" text="Light" variant="light" class="m-0">
-              <b-dropdown-item>First Action</b-dropdown-item>
-              <b-dropdown-item>Second Action</b-dropdown-item>
-              <b-dropdown-item>Third Action</b-dropdown-item>
-            </b-dropdown>
-            <b-dropdown size="sm" id="ddown_dark" text="Dark" variant="dark" class="m-0">
-              <b-dropdown-item>First Action</b-dropdown-item>
-              <b-dropdown-item>Second Action</b-dropdown-item>
-              <b-dropdown-item>Third Action</b-dropdown-item>
-            </b-dropdown>
-            <b-dropdown size="sm" id="ddown_link" text="Link" variant="link" class="m-0">
-              <b-dropdown-item>First Action</b-dropdown-item>
-              <b-dropdown-item>Second Action</b-dropdown-item>
-              <b-dropdown-item>Third Action</b-dropdown-item>
-            </b-dropdown>
           </b-card>
         </b-col>
       </b-row>
