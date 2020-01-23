@@ -8,9 +8,9 @@ export default {
       labels: ['January', 'February', 'March'],
       datasets: [{
         backgroundColor: [
-          'rgba(255, 99, 132, 0.2)',
-          'rgba(54, 162, 235, 0.2)',
-          'rgba(255, 206, 86, 0.2)'
+          'rgba(112,213,213,0.78)',
+          'rgba(82,191,246,0.74)',
+          'rgba(89,255,154,0.67)'
         ],
         data: [10, 20, 30]
       }]

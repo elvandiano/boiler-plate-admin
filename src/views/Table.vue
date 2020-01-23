@@ -1,6 +1,14 @@
 <template>
     <b-card header="Table">
       <div class="chart-wrapper">
+        <div class="col-md-3">
+          <b-input-group class="mb-4">
+            <b-input-group-prepend>
+              <b-input-group-text><i class="fa fa-search"/></b-input-group-text>
+            </b-input-group-prepend>
+            <b-form-input size="sm" type="password" class="form-control" placeholder="Search.." autocomplete="current-password"/>
+          </b-input-group>
+        </div>
         <table-plate sticky-header="false" :columns="tableColumn" :item="listItem" :useNumber="false"
                      @pagination="getDataTable">
           <template slot="action" slot-scope="data">
