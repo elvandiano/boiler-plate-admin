@@ -24,6 +24,7 @@ import FormFile from '../views/base/FormFile'
 import Modal from '../views/base/Modal'
 import Loader from '../views/base/Loader'
 import Icon from '../views/base/Icon'
+import RadioButton from '../views/base/RadioButton'
 
 Vue.use(VueRouter)
 
@@ -55,6 +56,11 @@ const router = new VueRouter({
           path: 'checkbox',
           name: 'Checkbox',
           component: Checkbox
+        },
+        {
+          path: 'radio',
+          name: 'Radio',
+          component: RadioButton
         },
         {
           path: 'upload-file',

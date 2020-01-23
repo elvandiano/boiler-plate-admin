@@ -20,6 +20,11 @@ export default {
       icon: 'fa fa-bars',
       children: [
         {
+          name: 'Alert',
+          url: '/alert',
+          icon: 'fa fa-bars'
+        },
+        {
           name: 'Breadcrumbs',
           url: '/breadcrumbs',
           icon: 'fa fa-bars'
@@ -45,6 +50,11 @@ export default {
           icon: 'fa fa-bars'
         },
         {
+          name: 'Form Radio',
+          url: '/radio',
+          icon: 'fa fa-bars'
+        },
+        {
           name: 'Form File',
           url: '/upload-file',
           icon: 'fa fa-bars'
@@ -52,16 +62,6 @@ export default {
         {
           name: 'Form Input',
           url: '/form',
-          icon: 'fa fa-bars'
-        },
-        {
-          name: 'Alert',
-          url: '/alert',
-          icon: 'fa fa-bars'
-        },
-        {
-          name: 'Tabs',
-          url: '/tabs',
           icon: 'fa fa-bars'
         },
         {
@@ -78,6 +78,11 @@ export default {
           name: 'Modal',
           url: '/modal',
           icon: 'fa fa-bars'
+        },
+        {
+          name: 'Tabs',
+          url: '/tabs',
+          icon: 'fa fa-bars'
         }
       ]
     },
@@ -87,11 +92,6 @@ export default {
       icon: 'fa fa-cube',
       children: [
         {
-          name: 'Standard Buttons',
-          url: '/buttons',
-          icon: 'fa fa-cube'
-        },
-        {
           name: 'Buttons Dropdown',
           url: '/buttons-dropdown',
           icon: 'fa fa-cube'
@@ -99,6 +99,11 @@ export default {
         {
           name: 'Buttons Group',
           url: '/buttons-group',
+          icon: 'fa fa-cube'
+        },
+        {
+          name: 'Standard Buttons',
+          url: '/buttons',
           icon: 'fa fa-cube'
         }
       ]
