@@ -1,6 +1,6 @@
 <template>
     <div>
-      <v-select ref="vSelect" :options="data" :placeholder="placeholder" :searchable="searchable"></v-select>
+      <v-select ref="vSelect" :value="value" @input="setSelectedInput($event)" :options="data" :placeholder="placeholder" :searchable="searchable"></v-select>
     </div>
 </template>
 
@@ -14,6 +14,22 @@ export default {
     'searchable': {
       type: Boolean,
       default: true
+    },
+    'value': String
+  },
+  computed: {
+    getSelectedVal: {
+      get () {
+        return this.selectedVal
+      },
+      set (val) {
+        return val
+      }
+    }
+  },
+  methods: {
+    setSelectedInput (evt) {
+      this.$emit('input', evt)
     }
   },
   components: {

@@ -13,6 +13,7 @@
                 <b-form-invalid-feedback>{{ validationContext.errors[0] }}</b-form-invalid-feedback>
               </b-form-group>
             </ValidationProvider>
+
             <ValidationProvider name="Nama" rules="required" v-slot="validationContext">
               <b-form-group label="Your Name:">
                 <b-form-input
@@ -23,22 +24,26 @@
                 <b-form-invalid-feedback>{{ validationContext.errors[0] }}</b-form-invalid-feedback>
               </b-form-group>
             </ValidationProvider>
-            <b-form-group label="Combo" label-for="input-3">
-              <v-select-2
-                v-model="form1.combo"
-                :data="options"
-                :placeholder="'Combo'"
-                :searchable="false" class="mb-2"/>
-            </b-form-group>
+
+              <b-form-group label="Combo" label-for="input-3">
+                <v-select-2
+                  v-model="form1.combo"
+                  :data="options"
+                  :placeholder="'Combo'"
+                  :searchable="false" class="mb-2"/>
+              </b-form-group>
+
             <b-form-group label="Combo With Search" label-for="input-3">
               <v-select-2 :data="options" :placeholder="'Combo'" class="mb-2"/>
             </b-form-group>
+
             <b-form-group id="input-group-4">
               <b-form-checkbox-group id="checkboxes-4">
                 <b-form-checkbox value="me">Check me out</b-form-checkbox>
                 <b-form-checkbox value="that">Check that out</b-form-checkbox>
               </b-form-checkbox-group>
             </b-form-group>
+
             <b-button type="submit" variant="info" class="pull-right">Save</b-button>
             <b-button type="reset" variant="light" class="pull-right mr-2">Cancel</b-button>
           </b-form>
@@ -68,7 +73,7 @@
           </b-form-group>
 
           <b-form-group label-cols="3" label="Combo">
-            <v-select-2 :data="options" :placeholder="'Combo'" :searchable="false" class="mb-2"/>
+            <v-select-2 :data="options" v-model="form1.combo" :placeholder="'Combo'" :searchable="false" class="mb-2"/>
           </b-form-group>
 
           <b-form-group label-cols="3" label="Combo With Search">
@@ -136,7 +141,7 @@ export default {
         if (!success) {
           return
         }
-        console.log('submitted')
+        console.log('submitted', this.form1.combo)
       })
     }
   }
