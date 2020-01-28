@@ -1,7 +1,7 @@
 <template>
   <div class="row">
     <div class="col-6">
-      <b-card title="Vertical">
+      <b-card title="Vertical (with validation)">
         <ValidationObserver ref="form">
           <b-form @submit.prevent="submit">
             <ValidationProvider name="E-mail" rules="required" v-slot="validationContext">
@@ -25,17 +25,27 @@
               </b-form-group>
             </ValidationProvider>
 
+            <ValidationProvider name="Combo" rules="required" v-slot="validationContext">
               <b-form-group label="Combo" label-for="input-3">
                 <v-select-2
                   v-model="form1.combo"
+                  :state="getValidationState(validationContext)"
+                  :errorMessage="validationContext.errors[0]"
                   :data="options"
                   :placeholder="'Combo'"
                   :searchable="false" class="mb-2"/>
               </b-form-group>
+            </ValidationProvider>
 
-            <b-form-group label="Combo With Search" label-for="input-3">
-              <v-select-2 :data="options" :placeholder="'Combo'" class="mb-2"/>
-            </b-form-group>
+            <ValidationProvider name="Combo Search" rules="required" v-slot="validationContext">
+              <b-form-group label="Combo With Search" label-for="input-3">
+                <v-select-2
+                  v-model="form1.comboSearch"
+                  :state="getValidationState(validationContext)"
+                  :errorMessage="validationContext.errors[0]"
+                  :data="options" :placeholder="'Combo'" class="mb-2"/>
+              </b-form-group>
+            </ValidationProvider>
 
             <b-form-group id="input-group-4">
               <b-form-checkbox-group id="checkboxes-4">
@@ -118,7 +128,8 @@ export default {
       form1: {
         email: '',
         name: '',
-        combo: ''
+        combo: '',
+        comboSearch: ''
       },
       foods: [{ text: 'Select One', value: null }, 'Carrots', 'Beans', 'Tomatoes', 'Corn'],
       options: [
